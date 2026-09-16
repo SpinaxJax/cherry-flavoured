@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "cherry-flavoured",
+	"version": "${version}",
+	"name": "Cherry Flavoured",
+	"description": "This is Cherry Flavoured Minecraft!",
+	"authors": [
+		"SpinaxJax!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cherry-flavoured/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cherryflavoured.CherryFlavoured"
+		],
+		"fabric-datagen": [
+			"net.cherryflavoured.CherryFlavouredDataGenerator"
+		]
+	},
+	"mixins": [
+		"cherry-flavoured.mixins.json"
+	],
+	"accessWidener": "cherry-flavoured.classtweaker",
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
